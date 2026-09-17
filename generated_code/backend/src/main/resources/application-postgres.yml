@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/atumerlin}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME:atumerlin}
+    password: ${DB_PASSWORD:atumerlin}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
